@@ -130,6 +130,7 @@ def start_game():
             while calc_hand(dealer) <= 16:
                 dealer.append(cards.pop())
 
+
             standing = True
 
     if play == False:
