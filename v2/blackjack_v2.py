@@ -43,7 +43,7 @@ def start_game():
         print(f"{colors.bcolors.ENDC}")
 
     except:
-        raise print('Please type in an integer!')
+        print('Please type in an integer!')
         cls()
         start_game()
 
@@ -88,7 +88,7 @@ def start_game():
 
             print("Dealer Cards: [{}] [?]".format(dealer[0]))
             print("Your Cards: [{}] ({})".format("][".join(player), player_score))
-            print("Pot:",g.bet,"$")
+            print(f"Pot: {g.bet}$")
             print("")
 
         if standing == True:
@@ -201,7 +201,7 @@ def start_game():
             break
 
         else:
-            print("Error 400")
+            print("Error 400. Invalid input! Starting new round...")
             start_game()
 
 start_game()
